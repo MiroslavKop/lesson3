@@ -32,3 +32,61 @@
         <input id="passwordconfirmation" name="passwordconfirmation" type="password" placeholder="Подтвердите пароль"
           minlength="5" required>
       </div>
+
+      <br>
+      <div>
+        <label for="email">Введите почту</label>
+        <input id="email" type="email" name="email" placeholder="Ваш email" required>
+      </div>
+
+      <br>
+      <div>
+        <label for="phone">Введите номер телефона</label>
+        <input id="phone" type="tel" name="phone" placeholder="Ваш номер" required>
+      </div>
+    </fieldset>
+
+    <br>
+    <fieldset>
+      <legend>Дополнительная информация</legend>
+      <p>Ваш пол:</p>
+      <div>
+        <input checked type="radio" name="gender" value="male">Мужской
+      </div>
+      <div>
+        <input type="radio" name="gender" value="female">Женский
+      </div>
+
+      <br>
+      <div>
+        <label for="age">Введите возраст</label>
+        <input id="age" type="number" name="age" placeholder="Возраст" min="1" max="120">
+      </div>
+      <br>
+      <div>
+        <label for="aboutme">О себе</label>
+        <textarea cols="30" rows="10" id="aboutme" name="multitext" placeholder="Напишите о себе"></textarea>
+      </div>
+
+      <br>
+      <div>
+        <label for="photo">Ваше фото</label>
+        <input id="photo" type="file" name="photo">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Действия</legend>
+      <button type="submit">Отправить</button>
+      <button type="reset">Сбросить</button>
+    </fieldset>
+  </form>
+  <ul>
+    <li><a href="auto.html">Авторизация</a></li>
+    <li><a href="index.html">Главная страница</a></li>
+    <li><a href="search.html">Поиск авто</a></li>
+  </ul>
+
+</body>
+
+</html>
