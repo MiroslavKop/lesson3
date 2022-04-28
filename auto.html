@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Авторизация</h1>
+  <hr>
+  <form action="https://tests.fomenko.top/echo/index.php" method="get">
+    <div>
+      <label for="email">Ваша почта</label>
+      <input id="email" name="login" type="email" placeholder="Ваша почта" required>
+    </div>
+
+    <br>
+    <div>
+      <label for="password">Ваш пароль</label>
+      <input id="password" name="password" type="password" placeholder="Ваш пароль" minlength="5" required>
+    </div>
+
+    <br>
+    <div>
+      <input type="checkbox" name="remember password">Запомнить пароль?
+    </div>
+
+    <br>
+    <fieldset>
+      <legend>Действия</legend>
+      <button type="submit">Отправить</button>
+      <button type="reset">Сбросить</button>
+    </fieldset>
+  </form>
+  <hr>
+  <ul>
+    <li><a href="index.html">Главная страница</a></li>
+    <li><a href="reg.html">Регистрация</a></li>
+    <li><a href="search.html">Поиск авто</a></li>
+  </ul>
+</body>
+
+</html>
