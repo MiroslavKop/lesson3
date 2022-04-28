@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registration</title>
+  <title>Document</title>
 </head>
 
 <body>
@@ -14,61 +14,56 @@
   <form action="https://tests.fomenko.top/echo/index.php" method="get">
     <fieldset>
       <legend>Обязательно для заполнения</legend>
-      <br>
+
       <div>
         <label for="lgn">Введите логин</label>
         <input id="lgn" type="text" name="login" placeholder="Ваш логин" required>
       </div>
 
-      <br>
       <div>
         <label for="pass">Введите пароль</label>
         <input id="pass" type="password" name="password" placeholder="Ваш пароль" minlength="5" required>
       </div>
 
-      <br>
       <div>
         <label for="passwordconfirmation">Подтвердите пароль</label>
         <input id="passwordconfirmation" name="passwordconfirmation" type="password" placeholder="Подтвердите пароль"
           minlength="5" required>
       </div>
 
-      <br>
       <div>
         <label for="email">Введите почту</label>
         <input id="email" type="email" name="email" placeholder="Ваш email" required>
       </div>
 
-      <br>
       <div>
         <label for="phone">Введите номер телефона</label>
         <input id="phone" type="tel" name="phone" placeholder="Ваш номер" required>
       </div>
     </fieldset>
 
-    <br>
     <fieldset>
       <legend>Дополнительная информация</legend>
       <p>Ваш пол:</p>
       <div>
-        <input checked type="radio" name="gender" value="male">Мужской
+        <input checked type="radio" id="male" name="gender" value="male">
+        <label for="male">Мужской</label>
       </div>
       <div>
-        <input type="radio" name="gender" value="female">Женский
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Женский</label>
       </div>
 
-      <br>
       <div>
         <label for="age">Введите возраст</label>
         <input id="age" type="number" name="age" placeholder="Возраст" min="1" max="120">
       </div>
-      <br>
+
       <div>
         <label for="aboutme">О себе</label>
         <textarea cols="30" rows="10" id="aboutme" name="multitext" placeholder="Напишите о себе"></textarea>
       </div>
 
-      <br>
       <div>
         <label for="photo">Ваше фото</label>
         <input id="photo" type="file" name="photo">
@@ -81,6 +76,7 @@
       <button type="reset">Сбросить</button>
     </fieldset>
   </form>
+
   <ul>
     <li><a href="auto.html">Авторизация</a></li>
     <li><a href="index.html">Главная страница</a></li>
